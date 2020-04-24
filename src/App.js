@@ -3,12 +3,10 @@ import './App.css';
 
 import HomePage from './pages/homepage/homepage.componenet';
 import {Route , Switch } from 'react-router-dom';
+import  ShopPage from './pages/shop/shop.component';
 
 
-const HatsPage=() =>(
-  <div>Hats PAge</div>
-)
- 
+
 
 function App() {
   return (
@@ -16,7 +14,7 @@ function App() {
       {/* Switch used for rendering only one route when matched */}
       <Switch> 
       <Route exact path='/' component={HomePage}/>
-      <Route path='/hats' component={HatsPage}/>
+      <Route path='/shop' component={ShopPage}/>
       </Switch>
      
     </div>
