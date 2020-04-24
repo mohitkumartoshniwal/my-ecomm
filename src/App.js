@@ -4,6 +4,8 @@ import './App.css';
 import HomePage from './pages/homepage/homepage.componenet';
 import {Route , Switch } from 'react-router-dom';
 import  ShopPage from './pages/shop/shop.component';
+import Header from './components/header/header.component';
+
 
 
 
@@ -11,6 +13,7 @@ import  ShopPage from './pages/shop/shop.component';
 function App() {
   return (
     <div>
+      <Header/>
       {/* Switch used for rendering only one route when matched */}
       <Switch> 
       <Route exact path='/' component={HomePage}/>
